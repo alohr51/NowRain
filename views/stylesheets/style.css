@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "myFont";
+    src: url("myFont.ttf");
+}
+
+@font-face {
+    font-family: "helvneue";
+    src: url("helvneue.ttf");
+}
+
+body{
+    background: #99badd;
+}
+
+#header{
+    font-size: 1.3em;
+    float: left;
+    font-family: helvneue;
+    padding:10px;
+}
+
+.container{
+    font-family: myFont;
+    font-size: 1.2em;
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}
+
+.info{
+    margin-top:1em;
+    text-align: center;
+}

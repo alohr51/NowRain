@@ -1,0 +1,6 @@
+---
+name: NowRain
+memory: 512M
+instances: 1
+host: nowrain
+domain: mybluemix.net
