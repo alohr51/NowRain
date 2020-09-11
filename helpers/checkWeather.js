@@ -1,5 +1,6 @@
 var request = require("request");
-var cities = require('cities');
+// npm install cities --save
+//var cities = require('cities');
 var cloudant = require('../helpers/cloudantHelper.js');
 var twitter = require('../helpers/twitterHelper.js');
 var text = require('../helpers/textHelper.js');

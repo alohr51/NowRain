@@ -1,6 +1,6 @@
 var cfenv = require("cfenv");
 var appEnv = cfenv.getAppEnv();
-var Cloudant = require('cloudant');
+var Cloudant = require('@cloudant/cloudant');
 
 var appEnv = cfenv.getAppEnv();
 
@@ -10,7 +10,7 @@ var cloudantPass = cloudantCreds.credentials.password;
 
 //init cloudant
 var cloudant = Cloudant({account:cloudantUser, password:cloudantPass});
-var locationsDB = cloudant.db.use('locations');
+var locationsDB = cloudant.use('locations');
 
 exports.insert = function(doc, callback){
 	locationsDB.insert(doc, function(err, body, header) {
